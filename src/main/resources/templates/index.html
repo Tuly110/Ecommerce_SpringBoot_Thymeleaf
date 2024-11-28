@@ -11,16 +11,12 @@
 
 		<div id="carouselExample" class="carousel slide">
 			<div class="carousel-inner">
-<!--				<div class="carousel-item active">-->
-<!--					<img src="img/hero/banner.jpg" class="d-block w-100" alt="..."-->
-<!--						height="350px">-->
-<!--				</div>-->
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3">
 							<div class="hero__categories">
 								<div class="hero__categories__all">
-									<i class="fa fa-bars"></i>
+<!--									<i class="fa fa-bars"></i>-->
 									<span>All categories</span>
 								</div>
 								<ul class="header__menu__dropdown">
@@ -88,9 +84,9 @@
 				<p class="text-center">Category</p>
 				<div class="col-lg-3 col-md-6 col-sm-6 mix vegetables fresh-meat" th:each="c:${category}">
 					<div class="featured__item">
-						<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
-							<img src="img/featured/feature-3.jpg">
-<!--							<img th:src="@{'img/category_img/'+${c.imageName}}" width="65%" height="140px"><br>-->
+						<div class="featured__item__pic set-bg">
+<!--							<img src="img/featured/feature-3.jpg">-->
+							<img th:src="@{'img/category_img/'+${c.imageName}}">
 							<ul class="featured__item__pic__hover">
 								<li><a href="#"><i class="fa fa-heart"></i></a></li>
 								<li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -115,8 +111,7 @@
 
 				<div class="col-md-3" th:each="p:${products}">
 					<div class="featured__item">
-						<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
-							<img src="img/featured/feature-3.jpg">
+						<div class="featured__item__pic set-bg" >
 							<img alt="" th:src="@{'img/product_img/'+${p.image}}" class="">
 						</div>
 						<div class="featured__item__text">

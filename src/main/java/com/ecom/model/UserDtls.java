@@ -11,9 +11,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
+@AllArgsConstructor //Tạo constructor với tất cả tham số
+@NoArgsConstructor //Tạo constructor không tham số
+@Getter //getter cho tất cả các trường
 @Setter
 @Entity
 public class UserDtls {

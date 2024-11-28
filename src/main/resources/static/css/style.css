@@ -114,11 +114,18 @@ a:focus {
 	outline: none;
 	color: #ffffff;
 }
+a {
+	text-decoration: none;
+}
 
 ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+
+li{
+	list-style-type: none;
 }
 
 /*---------------------
@@ -492,7 +499,7 @@ ol {
 }
 
 .header__menu ul li a {
-	font-size: 14px;
+
 	color: #252525;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -619,15 +626,15 @@ ol {
 	color: #ffffff;
 }
 
-.hero__categories__all:after {
-	position: absolute;
-	right: 18px;
-	top: 9px;
-	content: "3";
-	font-family:monospace;
-	font-size: 18px;
-	color: #ffffff;
-}
+/*.hero__categories__all:after {*/
+/*	position: absolute;*/
+/*	right: 18px;*/
+/*	top: 9px;*/
+/*	content: "3";*/
+/*	font-family:monospace;*/
+/*	font-size: 18px;*/
+/*	color: #ffffff;*/
+/*}*/
 
 .hero__categories ul {
 	border: 1px solid #ebebeb;

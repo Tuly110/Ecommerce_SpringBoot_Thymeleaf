@@ -193,7 +193,7 @@ public class AdminController {
 			session.setAttribute("errorMsg", "something wrong on server");
 		}
 
-		return "redirect:/admin/loadEditCategory/" + category.getId();
+		return "redirect:/admin/category" + category.getId();
 	}
 
 	@PostMapping("/saveProduct")
@@ -222,7 +222,7 @@ public class AdminController {
 			session.setAttribute("errorMsg", "something wrong on server");
 		}
 
-		return "redirect:/admin/loadAddProduct";
+		return "redirect:/admin/products";
 	}
 
 	@GetMapping("/products")
@@ -288,7 +288,7 @@ public class AdminController {
 				session.setAttribute("errorMsg", "Something wrong on server");
 			}
 		}
-		return "redirect:/admin/editProduct/" + product.getId();
+		return "redirect:/admin/products";
 	}
 
 	@GetMapping("/users")
@@ -325,7 +325,6 @@ public class AdminController {
 		Page<ProductOrder> page = orderService.getAllOrdersPagination(pageNo, pageSize);
 		m.addAttribute("orders", page.getContent());
 		m.addAttribute("srch", false);
-
 		m.addAttribute("pageNo", page.getNumber());
 		m.addAttribute("pageSize", pageSize);
 		m.addAttribute("totalElements", page.getTotalElements());
